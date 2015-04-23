@@ -3,7 +3,7 @@
 <head>
     
 <meta charset="utf-8">
-<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script>
 <link type="text/css" rel="stylesheet" href="css/bootstrap.css"/>
 <link type="text/css" rel="stylesheet" href="css/style.css">
@@ -112,10 +112,10 @@
                     <textarea class="form-control" rows="5" id="descricao"></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-primary">
+                <button type="submit" class="btn btn-primary submit-button">
                     <span class="glyphicon glyphicon-ok-circle"></span> Enviar
                 </button>
-                <button type="submit" class="btn btn-danger">
+                <button type="submit" class="btn btn-danger cancel-button">
                     <span class="glyphicon glyphicon-ban-circle"></span> Cancelar
                 </button>
 
@@ -131,6 +131,17 @@
           <p class="text-muted">Universidade do Estado de Santa Catarina</p>
         </div>
     </footer>
+
+    <script type="text/javascript">
+
+    $( "#tipo" ).change(function() {
+      console.log("tipo sendo alterado")
+      var input = '<input type="text" placeholder="Novo Campo" class="form-control span4" name="teste" >';
+      $("#tipo").after( input );
+    });
+
+
+    </script>
 
 </body>
 </html>

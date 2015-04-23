@@ -30,3 +30,40 @@ body > .container {
   padding-right: 15px;
   padding-left: 15px;
 }
+
+
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes bigredbutton {
+    from {background-color: red; width:100px;}
+    to {background-color: #330000;}
+}
+
+/* Standard syntax */
+@keyframes bigredbutton {
+    from {background-color: red;}
+    to {background-color: #330000;width:300px;}
+}
+/*
+* Transition 
+
+ */
+.submit-button {
+  width:100px;
+  -webkit-transition: width 2s; 
+  transition: width 2s;
+
+   
+}
+.submit-button:hover {
+  width:200px;
+}
+
+.cancel-button {
+  -webkit-animation-name: bigredbutton; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    animation-name: bigredbutton;
+    animation-duration: 4s;
+}
+
+
