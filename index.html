@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+<meta charset="utf-8">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<link type="text/css" rel="stylesheet" href="css/bootstrap.css"/>
+<link type="text/css" rel="stylesheet" href="css/style.css">
+
+<title>Exercício 2</title>
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-inverse  navbar-static-top">
+            <div class="container-fluig">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">WEB</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="pagina1.html">Página 1</a></li>
+                <li><a href="pagina2.html">Página 2</a></li>
+                <li><a href="pagina3.html">Página 3</a></li>
+                <li><a href="pagina4.html">Página 4</a></li>
+                <li><a href="pagina5.html">Página 5</a></li>
+            </ul>
+            </div>
+        </nav>
+    </header>    
+    
+    <div class="container">   
+
+        <section>
+            <fieldset class="col-md-6">
+                <legend id="endereco">Tabela de Imagens</legend>
+                <table class="table" cellspacing="5" cellpadding="5" border="1" >
+                   <caption>Listagem de Ilustrações</caption>
+                   <thead>
+                       <tr>
+                           <th>Nome</th>
+                           <th>Descrição</th>
+                           <th>Tamanho</th>
+                       </tr>
+                   </thead>
+                   <tbody>
+                       <tr>
+                           <td><a href="http://lorempixel.com/400/200/business">bussines.jpg</a></td>
+                           <td>Business</td>
+                           <td>2 MB</td>
+                       </tr>
+                       <tr>
+                           <td><a href="http://lorempixel.com/400/200/abstract">abstract.jpg</a></td>
+                           <td>Abstract</td>
+                           <td>2 MB</td>
+                       </tr>
+                       <tr>
+                           <td><a href="http://lorempixel.com/400/200/city">city.jpg</a></td>
+                           <td>City</td>
+                           <td>2 MB</td>
+                       </tr>
+                       <tr>
+                           <td><a href="http://lorempixel.com/400/200/business">food.jpg</a></td>
+                           <td>Food</td>
+                           <td>2 MB</td>
+                       </tr>
+                       <tr >
+                           <td colspan="4"> 4</td>
+                       </tr>
+                   </tbody>
+               </table>				
+            </fieldset>
+        </section>
+    </div>
+
+    <div class="container">    
+
+        <fieldset class="col-md-6">
+        <legend id="endereco">Cadastre uma imagem</legend>
+
+            <form action="#" method="post">
+
+                <div class="form-group">
+                    <div class="row">
+
+                        <div class="col-md-9">
+                            <label for="nome_arquivo">Nome do arquivo</label>
+                            <input type="text" class="form-control" id="nome_arquivo" name="nome_arquivo" required>
+                        </div>
+                        <div class="col-xs-3">
+                            <label for="tipo">Tipo</label>
+                            <select name="tipo" id="tipo" class="form-control">
+                                <option value="JPG">JPG</option>                        
+                                <option value="JPEG">JPEG</option>                        
+                                <option value="GIF">GIF</option>                        
+                                <option value="PNG">PNG</option>                        
+                                <option value="BMP">BMP</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="url_arquivo">Endereço</label>
+                    <input type="url" class="form-control" id="url_arquivo" name="url_arquivo" placeholder="http://hostname.com/arquivo.jpg" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="descricao">Descrição</label>
+                    <textarea class="form-control" rows="5" id="descricao"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">
+                    <span class="glyphicon glyphicon-ok-circle"></span> Enviar
+                </button>
+                <button type="submit" class="btn btn-danger">
+                    <span class="glyphicon glyphicon-ban-circle"></span> Cancelar
+                </button>
+
+            </form>
+        </fieldset> 
+
+      
+        
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+          <p class="text-muted">Universidade do Estado de Santa Catarina</p>
+        </div>
+    </footer>
+
+</body>
+</html>

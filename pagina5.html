@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<link type="text/css" rel="stylesheet" href="css/bootstrap.css"/>
+<link type="text/css" rel="stylesheet" href="css/style.css">
+
+<title>Exercício 2</title>
+
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-inverse  navbar-static-top">
+            <div class="container-fluig">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">WEB</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pagina1.html">Página 1</a></li>
+                <li><a href="pagina2.html">Página 2</a></li>
+                <li><a href="pagina3.html">Página 3</a></li>
+                <li><a href="pagina4.html">Página 4</a></li>
+                <li class="active"><a href="pagina5.html">Página 5</a></li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <fieldset class="col-md-7">
+        <legend id="endereco">Dados pessoais</legend>
+
+            <form action="#" method="post">
+
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label for="nome">Nome</label>
+                            <input type="text" class="form-control" id="nome" name="nome" placeholder="Insira seu nome" required autofocus>
+                        </div>
+                        <div class="col-md-8">
+                            <label for="sobrenome">Sobrenome</label>
+                            <input type="text" class="form-control" id="sobrenome" name="sobrenome" placeholder="Insira seu sobrenome" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="email@exemplo.com" required>
+                </div>
+
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-6">                        
+                            <label for="usuario">Usuário</label>
+                            <input type="text" class="form-control" id="usuario" name="usuario" required placeholder="Insira seu login" >
+                        </div>
+
+                        <div class="col-md-6">                        
+                            <label for="senha">Senha</label>
+                            <input type="password" class="form-control" id="senha" name="senha" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-4">                        
+                            <label for="idade">Idade</label>
+                            <input type="number" class="form-control" id="idade" name="idade" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="checkbox">
+                    <label><input type="radio" name="sexo" id="sexom" value="M" checked>Masculino</label>
+                    <label><input type="radio" name="sexo" id="sexof" value="F" >Feminino</label>
+                </div>    
+
+                <div class="form-group">
+                    <label for="habilidade">Habilidade</label>
+                    <select name="habilidade" id="habilidade" class="form-control">
+                        <option value="ASJ">Analista de Sistemas Junior</option>
+                        <option value="ASP">Analista de Sistemas Pleno</option>
+                        <option value="ASS">Analista de Sistemas Sênio</option>
+                        <option value="TI">Técnico de Infraestrutura</option>
+                        <option value="TI">Técnico de Programação</option>
+                        <option value="">Outra</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <label for="rua">Rua</label>
+                            <input type="text" class="form-control" id="rua" name="rua">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="numero">Número</label>
+                            <input type="number" class="form-control" id="numero" name="numero">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="complemento">Complemento</label>
+                    <input type="text" class="form-control" id="complemento" name="complemento">
+                </div>
+
+
+                <button type="submit" class="btn btn-primary">
+                    <span class="glyphicon glyphicon-ok-circle"></span> Enviar
+                </button>
+
+                <button type="reset" class="btn btn-danger">
+                    <span class="glyphicon glyphicon-erase"></span> Limpar
+                </button>
+
+            </form>
+        </fieldset> 
+
+    </div>    
+
+    <footer class="footer">
+        <div class="container">
+          <p class="text-muted">Universidade do Estado de Santa Catarina</p>
+        </div>
+    </footer>
+
+</body>
+</html>
